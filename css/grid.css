@@ -1,0 +1,56 @@
+/* Grid */
+.grid {display: grid}
+
+.g-ac-c  {align-content: center}
+.g-ac-s  {align-content: space-evenly}
+.g-ac-sa {align-content: space-around}
+.g-ac-sb {align-content: space-between}
+.g-ac-st {align-content: stretch}
+
+.g-jc-с  {justify-content: center}
+.g-jc-s  {justify-content: start}
+.g-jc-e  {justify-content: end}
+.g-jc-sb {justify-content: space-between}
+.g-jc-sa {justify-content: space-around}
+.g-jc-se {justify-content: space-evenly}
+
+.g-ai-c  {align-items: center}
+.g-ai-s  {align-items: start}
+.g-ai-e  {align-items: end}
+.g-ai-st {align-items: stretch}
+.g-ai-b  {align-items: baseline}
+
+.g-ji-c  {justify-items: center}
+.g-ji-s  {justify-items: start}
+.g-ji-e  {justify-items: end}
+.g-ji-st {justify-items: stretch}
+
+.col-1-1 {grid-column: 1/2}
+.col-1-2 {grid-column: 1/3}
+.col-2-1 {grid-column: 2/3}
+.col-2-2 {grid-column: 2/4}
+.col-2-6 {grid-column: 2/7}
+.col-3-2 {grid-column: 3/5}
+.col-4-2 {grid-column: 4/6}
+.col-5-2 {grid-column: 5/7}
+.col-1-3 {grid-column: 1/4}
+.col-2-3 {grid-column: 2/5}
+.col-3-3 {grid-column: 3/6}
+.col-3-4 {grid-column: 3/7}
+.col-4-3 {grid-column: 4/7}
+.col-1-4 {grid-column: 1/5}
+.col-1-6 {grid-column: 1/7}
+
+.gcg-12 {grid-column-gap:12px}
+.gcg-40 {grid-column-gap:40px}
+
+.gg-12 {grid-gap: 12px}
+.gg-24 {grid-gap: 24px}
+.gg-32 {grid-gap: 32px}
+.gg-42 {grid-gap: 42px}
+.gg-56 {grid-gap: 56px}
+
+.gtc-6{ grid-template-columns: repeat(6, 1fr)}
+.gtc-5{ grid-template-columns: repeat(5, 1fr)}
+.gtc-3{ grid-template-columns: repeat(3, 1fr)}
+.gtc-2{ grid-template-columns: repeat(2, 1fr)}

@@ -1,0 +1,101 @@
+@import "/css/reset.css";
+@import "/css/grid.css";
+@import "/css/flex.css";
+@import "/css/gap.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Philosopher:wght@400;700&display=swap');
+
+
+
+html, body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+/* /* font-family: 'Pacifico', cursive; */
+/* font-family: 'Philosopher', sans-serif; */ */
+}
+
+body {
+    display: grid;
+    place-content: center;
+}
+
+h1, p {
+    color:white;
+}
+
+h1 {
+    font-size: 64px;
+}
+p {
+    font-size: 24px;
+}
+a {
+    color:white;
+}
+.block {
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+    display: grid;
+}
+
+.arrow {
+    display: grid;
+    justify-content: center;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow-animation;
+}
+
+.container {
+    display: grid;
+    margin-top: 16%;
+    padding: 0 64px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.header {
+    position: absolute;
+    padding: 12px 56px;
+    font-size: 42px;
+    width: 100%;
+}
+.btn {
+    font-size: 24px;
+    padding: 16px 24px;
+}
+.btn-1 {
+    
+    background-color:white;
+    color:black;
+}
+.btn-2 {
+    
+    color:white;
+}
+
+
+
+canvas {
+    grid-column: 1;
+    grid-row: 1;
+    /* border: 1px rgb(62, 62, 62) solid; */
+}
+
+@keyframes arrow-animation {
+    from {
+        transform: translateY(0);
+        transform: scale(1);
+        /* transform: skew(0) */
+    }
+    50% {
+        transform: translateY(30px);
+        transform: scale(0);
+        /* transform: skew(100) */
+
+    }
+    to {
+        transform: translateY(0);
+        transform: scale(1);
+    }
+}
