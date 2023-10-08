@@ -74,8 +74,9 @@ a {
     color:white;
 }
 
-
-
+.container {
+    /* pointer-events: none; */
+}
 canvas {
     grid-column: 1;
     grid-row: 1;
