@@ -7,7 +7,7 @@ class ParticleBG {
         this.w = null
         this.h = null
         this.particleData = []
-        this.particleMaxCount = 50;
+        this.particleMaxCount = 20;
 
         this.mouse = {x:0, y:0}
         document.querySelector('.block').addEventListener('mousemove', ({clientX, clientY}) => {
@@ -65,7 +65,7 @@ class ParticleBG {
             this.particleData.forEach(particle => {
                 let d = distance(el, particle);
 
-                if (d < 1000) { drawLine(el, particle/* , d */) }
+                if (d < 200) { drawLine(el, particle/* , d */) }
                 if (d < 200) {
                     let smooth = 0.000005
 
@@ -74,7 +74,7 @@ class ParticleBG {
                         y: el.y - particle.y,
                     }
 
-                    if (d > 198) {
+                    if (d > 199) {
                         el.x += delta.x * (d - particle.x) * smooth
                         el.y += delta.y * (d - particle.y) * smooth
 
