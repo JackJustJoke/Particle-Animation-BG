@@ -74,8 +74,12 @@ class ParticleBG {
                         y: el.y - particle.y,
                     }
 
-                    el.x += delta.x * d * smooth
-                    el.y += delta.y * d * smooth
+                    if (d > 197) {
+                        el.x += delta.x * (d - particle.x) * smooth
+                        el.y += delta.y * (d - particle.y) * smooth
+
+                    }
+
 
                 }
             })
